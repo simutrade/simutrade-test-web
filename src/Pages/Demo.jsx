@@ -28,7 +28,7 @@ export default function Demo() {
     };
 
     return (
-        <Card sx={{minWidth: 275}}>
+        <Card sx={{minWidth: 260}}>
             <CardContent>
                 <Typography variant="h5">
                     Demo Panel
