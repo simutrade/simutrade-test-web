@@ -8,10 +8,10 @@ function App() {
     return (
         <div className="App">
             <Grid container>
-                <Grid item xs={6}>
+                <Grid item xs={4}>
                     <Demo/>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={8}>
                     <GameInfo/>
                 </Grid>
             </Grid>
