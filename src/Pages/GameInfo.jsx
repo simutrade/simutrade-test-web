@@ -80,7 +80,7 @@ export default function GameInfo() {
         <div>
             <input type='text' ref={inputVal} />
         </div>
-            <Button size="small" variant="outlined" onClick={getMsgFromback}>Get messages from Backend</Button>
+            <Button size="small" variant="outlined" onClick={getMsgFromback}>input game id</Button>
         </CardActions>
     </Card>
     );
