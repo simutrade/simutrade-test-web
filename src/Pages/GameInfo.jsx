@@ -17,6 +17,8 @@ export default function GameInfo() {
     const [starttime, setStartTime] = useState(0);
     const [endtime, setEndTime] = useState(0);
     const [description, setDes] = useState("");
+    const [userName, setUserName] = useState("");
+    const [userEmail, setUserEmail] = useState("");
     const inputVal = useRef(null)
     const getMsgFromback = () => {
 
@@ -30,7 +32,9 @@ export default function GameInfo() {
                     setCash(data.init_cash)
                     setCreateTime(data.createTime)
                     setStartTime(data.startTime)
-                    setEndTime(data.endtime)
+                    setEndTime(data.endTime)
+                    setUserName(data.userName)
+                    setUserEmail(data.userEmail)
                 })
             } else {
                 setName("ERROR!");
@@ -50,6 +54,12 @@ export default function GameInfo() {
             <Divider/>
             <Typography sx={{p: 1}} align={"left"}>
                 Game discription: {description}
+            </Typography>
+            <Typography sx={{p: 1}} align={"left"}>
+                User name: {userName}
+            </Typography>
+            <Typography sx={{p: 1}} align={"left"}>
+                User email: {userEmail}
             </Typography>
             <Divider/>
             <Stack>
